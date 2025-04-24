@@ -103,13 +103,14 @@ def print_report():
 def main():
     init_db()
     while True:
-        print("\nBookstore Sales Management")
+        print("\n**********************************")
         print("1. 新增銷售記錄")
         print("2. 顯示銷售報表")
         print("3. 更新銷售記錄")
         print("4. 刪除銷售記錄")
         print("5. 銷售報表")
         print("0. 離開")
+        print("\n**********************************")
 
         choice = input("Select an option: ")
 
