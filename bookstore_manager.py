@@ -73,9 +73,9 @@ def update_sale():
                   (new_price, new_qty, sale_id))
         conn.commit()
         conn.close()
-        print("✅ 銷售記錄更新成功.")
+        print("銷售記錄更新成功.")
     except ValueError:
-        print("❌ 輸入無效，請輸入正確的數字類型。")
+        print("輸入無效，請輸入正確的數字類型。")
 
 
 def delete_sale():
@@ -86,7 +86,7 @@ def delete_sale():
         records = c.fetchall()
 
         if not records:
-            print("⚠️ 沒有任何銷售記錄可供刪除。")
+            print("沒有任何銷售記錄可供刪除。")
             return
 
         print("\n======== 銷售記錄列表 ========")
@@ -133,7 +133,7 @@ def main():
         elif choice == '4':
             delete_sale()
         elif choice == '5' or choice == '':
-            print("👋 離開系統，再見！")
+            print("離開系統，再見！")
             break
         else:
             print("=> 錯誤：請輸入有效的選項。")
